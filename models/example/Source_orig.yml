@@ -1,0 +1,13 @@
+
+version: version: 2
+
+sources:
+  - name: orig_source   # A unique alias you use inside dbt
+    database: team_call_data_replica     # Optional: Only needed if different from target database
+    schema: public       # The actual external/source schema in your warehouse
+    tables:
+      - name: call
+      - name: call_transcript
+      - name: jobdiva_events
+      - name: qualified_candidates
+      

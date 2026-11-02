@@ -1,4 +1,4 @@
-{{ config(materialized='table', schema='sr_test_analytics') }}
+{{ config(materialized='table') }}
 
 select *
 from public.call
